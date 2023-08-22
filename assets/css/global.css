@@ -4,21 +4,52 @@
 }
 
 body {
-    background-color: #f6f8fc;
+    background-image: url("https://wallpaperaccess.com/full/3551099.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+h1{
+    color: #fff;
+    text-shadow: 0 2px 4px black;
+    font-family: 'Eviolite B', sans-serif;
+    letter-spacing: 10px;
+    font-size: 4rem;
+    margin-top: 5px;
 }
 
 .content {
+    text-align: center;
     width: 100vw;
     height: 100vh;
-    padding: 1rem;
-    background-color: #fff;
+    padding: 1rem 2rem;
+    max-width: 1270px;
+    margin: auto;
 }
 
-@media screen and (min-width: 992px) {
-    .content {
-        max-width: 992px;
-        height: auto;
-        margin: 1rem auto;
+@media only screen and (max-width: 992px){
+    .content, .optionsDiv{
+        /* height: auto; */
+        margin: 0 auto;
         border-radius: 1rem;
+        padding: 1rem;
+    }
+}
+
+@media only screen and (max-width: 650px){
+    .content{
+        height: auto;
+    }
+    h1{
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (max-width: 410px){
+    .content{
+        height: auto;
+    }
+    h1{
+        font-size: 2.5rem;
     }
 }
